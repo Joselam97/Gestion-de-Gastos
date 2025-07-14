@@ -23,5 +23,10 @@ namespace GestionDeGastos.Views
             string resultado = controlador.RegistrarUsuario(nombre, correo, contrasena);
             MessageBox.Show(resultado);
         }
+
+        private void RegistroForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

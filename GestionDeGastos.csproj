@@ -93,7 +93,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Analyzer Include="packages\SonarAnalyzer.CSharp.10.13.0.120203\analyzers\SonarAnalyzer.CSharp.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
   </ItemGroup>

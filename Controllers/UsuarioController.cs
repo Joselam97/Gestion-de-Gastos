@@ -8,27 +8,36 @@ using GestionDeGastos.Models;
 
 namespace GestionDeGastos.Controllers
 {
-    internal class UsuarioController
-    {
-        private List<Usuario> usuarios;
-
-        public UsuarioController()
+ 
+        public class UsuarioController
         {
-            usuarios = UsuarioData.CargarUsuarios();
-        }
+        //metodo que registra usuarios
+            public string RegistrarUsuario(string nombre, string correo, string contrasena)
+            {
+            //carga la lista de usuarios guardados en JSON
+                List<Usuario> usuarios = UsuarioData.CargarUsuarios();
 
-        public string RegistrarUsuario(string nombre, string correo, string contrasena)
-        {
-            if (usuarios.Any(u => u.Correo == correo))
-                return "Ya existe un usuario con ese correo";
+            //verifica si existe un usuario con ese correo
+                bool existeCorreo = usuarios.Exists(u => u.Correo.ToLower() == correo.ToLower());
+                if (existeCorreo)
+                {
+                    return "Ya existe un usuario con ese correo!";
+                }
 
-            var nuevo = new Usuario(usuarios.Count + 1, nombre, correo, contrasena);
-            if (!nuevo.DatosValidos())
-                return "Faltan datos";
+                //crea usuario con los datos ingresados
+                Usuario nuevoUsuario = new Usuario
+                {
+                    Nombre = nombre,
+                    Correo = correo,
+                    Contrasena = contrasena
+                };
 
-            usuarios.Add(nuevo);
-            UsuarioData.GuardarUsuarios(usuarios);
-            return "Usuario registrado exitosamente";
+            //agrega usuario a la lista existente
+                usuarios.Add(nuevoUsuario);
+                UsuarioData.GuardarUsuarios(usuarios);
+
+            //mensaje devuelto
+                return "Usuario registrado exitosamente";
+            }
         }
     }
-}
