@@ -1,0 +1,23 @@
+# Archivos y carpetas de Visual Studio
+.vs/
+*.user
+*.suo
+
+# Directorios de compilación
+bin/
+obj/
+
+# Archivos ejecutables o de salida
+*.exe
+*.dll
+*.pdb
+
+# Archivos de sistema
+*.log
+*.tmp
+*.cache
+*.DS_Store
+Thumbs.db
+
+# JSON temporales si los pruebas
+*.tmp.json
