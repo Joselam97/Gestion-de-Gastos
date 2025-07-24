@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using GestionDeGastos.Views;
 
 namespace GestionDeGastos.Views
 {
@@ -39,10 +40,11 @@ namespace GestionDeGastos.Views
             }
         }
 
-
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            RegistroForm registroForm = new RegistroForm();
+            registroForm.Show();       
+            this.Hide();               
         }
 
         private void btnGrupos_Click(object sender, EventArgs e)
@@ -59,6 +61,12 @@ namespace GestionDeGastos.Views
         private void lblNombre_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnGestionarGrupos_Click(object sender, EventArgs e)
+        {
+            GestionarGruposForm gestionarGruposForm = new GestionarGruposForm();
+            gestionarGruposForm.ShowDialog();
         }
     }
 }

@@ -15,12 +15,12 @@
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrincipalForm));
             this.lblNombre = new System.Windows.Forms.Label();
             this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
             this.btnGrupos = new System.Windows.Forms.Button();
             this.btnGastos = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.btnGestionarGrupos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,7 +37,6 @@
             // 
             // pictureBoxAvatar
             // 
-        
             this.pictureBoxAvatar.Location = new System.Drawing.Point(318, 64);
             this.pictureBoxAvatar.Name = "pictureBoxAvatar";
             this.pictureBoxAvatar.Size = new System.Drawing.Size(189, 201);
@@ -47,7 +46,7 @@
             // 
             // btnGrupos
             // 
-            this.btnGrupos.Location = new System.Drawing.Point(171, 143);
+            this.btnGrupos.Location = new System.Drawing.Point(171, 106);
             this.btnGrupos.Name = "btnGrupos";
             this.btnGrupos.Size = new System.Drawing.Size(75, 23);
             this.btnGrupos.TabIndex = 3;
@@ -57,7 +56,7 @@
             // 
             // btnGastos
             // 
-            this.btnGastos.Location = new System.Drawing.Point(171, 204);
+            this.btnGastos.Location = new System.Drawing.Point(171, 211);
             this.btnGastos.Name = "btnGastos";
             this.btnGastos.Size = new System.Drawing.Size(75, 23);
             this.btnGastos.TabIndex = 4;
@@ -72,12 +71,24 @@
             this.btnCerrarSesion.TabIndex = 5;
             this.btnCerrarSesion.Text = "Cerrar Sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
+            // btnGestionarGrupos
+            // 
+            this.btnGestionarGrupos.Location = new System.Drawing.Point(153, 162);
+            this.btnGestionarGrupos.Name = "btnGestionarGrupos";
+            this.btnGestionarGrupos.Size = new System.Drawing.Size(112, 23);
+            this.btnGestionarGrupos.TabIndex = 6;
+            this.btnGestionarGrupos.Text = "Gestionar Grupos";
+            this.btnGestionarGrupos.UseVisualStyleBackColor = true;
+            this.btnGestionarGrupos.Click += new System.EventHandler(this.btnGestionarGrupos_Click);
             // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(538, 362);
+            this.Controls.Add(this.btnGestionarGrupos);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnGastos);
             this.Controls.Add(this.btnGrupos);
@@ -96,5 +107,6 @@
         private System.Windows.Forms.Button btnGrupos;
         private System.Windows.Forms.Button btnGastos;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnGestionarGrupos;
     }
 }

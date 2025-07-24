@@ -33,6 +33,7 @@
             this.btnGuardarGrupo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNombreGrupo
@@ -52,12 +53,13 @@
             // 
             // btnGuardarGrupo
             // 
-            this.btnGuardarGrupo.Location = new System.Drawing.Point(84, 296);
+            this.btnGuardarGrupo.Location = new System.Drawing.Point(72, 268);
             this.btnGuardarGrupo.Name = "btnGuardarGrupo";
-            this.btnGuardarGrupo.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardarGrupo.TabIndex = 2;
+            this.btnGuardarGrupo.Size = new System.Drawing.Size(100, 23);
+            this.btnGuardarGrupo.TabIndex = 0;
             this.btnGuardarGrupo.Text = "Guardar";
             this.btnGuardarGrupo.UseVisualStyleBackColor = true;
+            this.btnGuardarGrupo.Click += new System.EventHandler(this.btnGuardarGrupo_Click);
             // 
             // label1
             // 
@@ -77,11 +79,22 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Lista de Usuarios";
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(84, 362);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 5;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // GrupoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 450);
+            this.ClientSize = new System.Drawing.Size(277, 406);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGuardarGrupo);
@@ -101,5 +114,15 @@
         private System.Windows.Forms.Button btnGuardarGrupo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+
+        private void btnGuardarGrupo_Click_1(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btnVolver_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

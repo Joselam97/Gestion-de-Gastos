@@ -6,6 +6,6 @@ namespace GestionDeGastos.Models
     public class Grupo
     {
         public string Nombre { get; set; }
-        public List<Usuario> Miembros { get; set; }
+        public List<string> Usuarios { get; set; } = new List<string>();
     }
 }

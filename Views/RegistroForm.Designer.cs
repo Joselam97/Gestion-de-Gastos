@@ -32,6 +32,7 @@ namespace GestionDeGastos.Views
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -105,7 +106,7 @@ namespace GestionDeGastos.Views
             // 
             // pictureBoxImagen
             // 
-            this.pictureBoxImagen.Location = new System.Drawing.Point(191, 353);
+            this.pictureBoxImagen.Location = new System.Drawing.Point(202, 252);
             this.pictureBoxImagen.Name = "pictureBoxImagen";
             this.pictureBoxImagen.Size = new System.Drawing.Size(80, 80);
             this.pictureBoxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -156,9 +157,19 @@ namespace GestionDeGastos.Views
             this.pictureBox4.Tag = "ImagenesUsuarios/avatar4.png";
             this.pictureBox4.Click += new System.EventHandler(this.ImagenSeleccionada);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(45, 384);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Crear cuenta";
+            // 
             // RegistroForm
             // 
             this.ClientSize = new System.Drawing.Size(308, 445);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtContrasena);
@@ -200,5 +211,6 @@ namespace GestionDeGastos.Views
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private Label label4;
     }
 }
