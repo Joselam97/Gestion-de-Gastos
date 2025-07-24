@@ -12,6 +12,7 @@ namespace GestionDeGastos.Models
         public string Nombre { get; set; }
         public string Correo { get; set; }
         public string Contrasena { get; set; }
+        public string RutaImagen { get; set; }
 
         public Usuario() { }
 
@@ -28,6 +29,11 @@ namespace GestionDeGastos.Models
             return !string.IsNullOrWhiteSpace(Nombre) &&
                    !string.IsNullOrWhiteSpace(Correo) &&
                    !string.IsNullOrWhiteSpace(Contrasena);
+        }
+
+        public override string ToString()
+        {
+            return Nombre;
         }
     }
 }

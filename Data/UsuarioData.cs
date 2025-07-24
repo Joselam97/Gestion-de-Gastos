@@ -1,31 +1,29 @@
-﻿using System.IO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Windows.Forms;
 using GestionDeGastos.Models;
-using System.Xml;
 using Newtonsoft.Json;
 
 namespace GestionDeGastos.Data
 {
     internal class UsuarioData
     {
-        private static readonly string ruta = "Data/usuarios.json";
 
         public static List<Usuario> CargarUsuarios()
         {
-            if (!File.Exists(ruta))
+            string rutaArchivo = "usuarios.json";
+
+            if (!File.Exists(rutaArchivo))
                 return new List<Usuario>();
 
-            string json = File.ReadAllText(ruta);
+            string json = File.ReadAllText(rutaArchivo);
             return JsonConvert.DeserializeObject<List<Usuario>>(json);
         }
 
         public static void GuardarUsuarios(List<Usuario> usuarios)
         {
-            string directorio = Path.GetDirectoryName(ruta);
+            string rutaArchivo = "usuarios.json";
+            string directorio = Path.GetDirectoryName(rutaArchivo);
 
             if (!Directory.Exists(directorio))
             {
@@ -33,7 +31,7 @@ namespace GestionDeGastos.Data
             }
 
             string json = JsonConvert.SerializeObject(usuarios, Newtonsoft.Json.Formatting.Indented);
-            File.WriteAllText(ruta, json);
+            File.WriteAllText(rutaArchivo, json);
         }
     }
 }

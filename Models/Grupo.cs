@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using GestionDeGastos.Models;
 
 namespace GestionDeGastos.Models
 {
-    internal class Grupo
+    public class Grupo
     {
+        public string Nombre { get; set; }
+        public List<Usuario> Miembros { get; set; }
     }
 }
