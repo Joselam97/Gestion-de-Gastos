@@ -55,7 +55,8 @@ namespace GestionDeGastos.Views
 
         private void btnGastos_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aqui se abrira la funcionalidad de gastos");
+            GastosForm gastosForm = new GastosForm(nombreUsuario);
+            gastosForm.ShowDialog();
         }
 
         private void lblNombre_Click(object sender, EventArgs e)

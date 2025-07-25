@@ -62,6 +62,7 @@
             this.btnGastos.TabIndex = 4;
             this.btnGastos.Text = "Gastos";
             this.btnGastos.UseVisualStyleBackColor = true;
+            this.btnGastos.Click += new System.EventHandler(this.btnGastos_Click);
             // 
             // btnCerrarSesion
             // 
