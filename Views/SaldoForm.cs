@@ -93,7 +93,7 @@ namespace GestionDeGastos.Views
                     {
                 gasto.Fecha.ToShortDateString(),
                 gasto.Nombre,
-                gasto.Monto.ToString("C"),
+                "₡" + gasto.Monto.ToString("N2"),
                 gasto.Descripcion,
                 gasto.Categoria ?? "Sin categoría"
             });
@@ -101,7 +101,7 @@ namespace GestionDeGastos.Views
                 }
 
                 decimal saldoNeto = presupuesto - totalGastos;
-                lblResultado.Text = $"Saldo Neto: {saldoNeto:C}";
+                lblResultado.Text = $"Saldo Neto: ₡{saldoNeto:N2}";
             }
         }
     }

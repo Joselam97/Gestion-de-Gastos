@@ -78,6 +78,9 @@ namespace GestionDeGastos.Views
             }
 
             dgvGastos.DataSource = filtrados;
+
+            decimal totalGastos = filtrados.Sum(g => g.Monto);
+            lblTotalGastos.Text = $"Total Gastos: ₡{totalGastos:N2}";
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -86,6 +89,11 @@ namespace GestionDeGastos.Views
         }
 
         private void ReporteGastosForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTotalGastos_Click(object sender, EventArgs e)
         {
 
         }

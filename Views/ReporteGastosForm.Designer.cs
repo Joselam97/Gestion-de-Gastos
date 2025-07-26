@@ -23,6 +23,7 @@
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.dgvGastos = new System.Windows.Forms.DataGridView();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.lblTotalGastos = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGastos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,24 +107,36 @@
             this.dgvGastos.AllowUserToAddRows = false;
             this.dgvGastos.AllowUserToDeleteRows = false;
             this.dgvGastos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvGastos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvGastos.Location = new System.Drawing.Point(12, 153);
             this.dgvGastos.Name = "dgvGastos";
             this.dgvGastos.ReadOnly = true;
-            this.dgvGastos.Size = new System.Drawing.Size(560, 253);
+            this.dgvGastos.Size = new System.Drawing.Size(617, 253);
             this.dgvGastos.TabIndex = 9;
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(209, 445);
+            this.btnVolver.Location = new System.Drawing.Point(259, 436);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(112, 23);
             this.btnVolver.TabIndex = 10;
             this.btnVolver.Text = "Volver";
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // lblTotalGastos
+            // 
+            this.lblTotalGastos.AutoSize = true;
+            this.lblTotalGastos.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblTotalGastos.Location = new System.Drawing.Point(12, 409);
+            this.lblTotalGastos.Name = "lblTotalGastos";
+            this.lblTotalGastos.Size = new System.Drawing.Size(134, 19);
+            this.lblTotalGastos.TabIndex = 11;
+            this.lblTotalGastos.Text = "Total Gastos: ₡0.00";
+            this.lblTotalGastos.Click += new System.EventHandler(this.lblTotalGastos_Click);
+            // 
             // ReporteGastosForm
             // 
-            this.ClientSize = new System.Drawing.Size(584, 480);
+            this.ClientSize = new System.Drawing.Size(641, 480);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.lblGrupo);
@@ -135,11 +148,13 @@
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.dgvGastos);
             this.Controls.Add(this.btnVolver);
+            this.Controls.Add(this.lblTotalGastos);
             this.Name = "ReporteGastosForm";
             this.Text = "Reporte de Gastos";
             this.Load += new System.EventHandler(this.ReporteGastosForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGastos)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -154,5 +169,6 @@
         private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.DataGridView dgvGastos;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Label lblTotalGastos;
     }
 }
