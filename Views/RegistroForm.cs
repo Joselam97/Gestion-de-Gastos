@@ -24,7 +24,7 @@ namespace GestionDeGastos.Views
             {
                 rutaAvatarSeleccionada = ofd.FileName;
 
-                // Mostrar imagen seleccionada en el PictureBox
+                
                 pictureBoxImagen.Image = Image.FromFile(rutaAvatarSeleccionada);
                 pictureBoxImagen.SizeMode = PictureBoxSizeMode.Zoom;
             }
@@ -83,7 +83,7 @@ namespace GestionDeGastos.Views
 
             usuarios.Add(nuevoUsuario);
 
-            // Guardar con identación
+            
             string jsonActualizado = JsonConvert.SerializeObject(usuarios, Formatting.Indented);
             File.WriteAllText(rutaArchivo, jsonActualizado);
 
@@ -98,12 +98,13 @@ namespace GestionDeGastos.Views
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
+            string nombre = txtNombre.Text.Trim();
             string correo = txtCorreo.Text.Trim();
             string contrasena = txtContrasena.Text;
 
-            if (string.IsNullOrWhiteSpace(correo) || string.IsNullOrWhiteSpace(contrasena))
+            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(correo) || string.IsNullOrWhiteSpace(contrasena))
             {
-                MessageBox.Show("Debe ingresar correo y contraseña.");
+                MessageBox.Show("Debe ingresar nombre, correo y contraseña.");
                 return;
             }
 
@@ -118,7 +119,12 @@ namespace GestionDeGastos.Views
             string json = File.ReadAllText(rutaArchivo);
             var usuarios = JsonConvert.DeserializeObject<List<Usuario>>(json) ?? new List<Usuario>();
 
-            var usuarioEncontrado = usuarios.FirstOrDefault(u => u.Correo == correo && u.Contrasena == contrasena);
+            
+            var usuarioEncontrado = usuarios.FirstOrDefault(u =>
+                u.Nombre == nombre &&
+                u.Correo == correo &&
+                u.Contrasena == contrasena
+            );
 
             if (usuarioEncontrado != null)
             {
@@ -126,12 +132,11 @@ namespace GestionDeGastos.Views
 
                 PrincipalForm principal = new PrincipalForm(usuarioEncontrado.Nombre, usuarioEncontrado.RutaImagen);
                 principal.Show();
-
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Correo o contraseña incorrectos.", "Error de inicio", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nombre, correo o contraseña incorrectos (recuerde que distingue mayúsculas y minúsculas).", "Error de inicio", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
