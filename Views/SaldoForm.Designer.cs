@@ -103,6 +103,11 @@
             this.lstReporte.TabIndex = 9;
             this.lstReporte.UseCompatibleStateImageBehavior = false;
             this.lstReporte.View = System.Windows.Forms.View.Details;
+            this.lstReporte.Columns.Add("Fecha", 100);
+            this.lstReporte.Columns.Add("Nombre", 150);
+            this.lstReporte.Columns.Add("Monto", 100);
+            this.lstReporte.Columns.Add("Descripción", 150);
+            this.lstReporte.Columns.Add("Categoría", 150);
             // 
             // lblResultado
             // 

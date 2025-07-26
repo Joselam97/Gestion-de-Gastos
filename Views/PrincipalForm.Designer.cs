@@ -115,6 +115,7 @@
             this.btnReporteGastos.TabIndex = 9;
             this.btnReporteGastos.Text = "Reporte Gastos";
             this.btnReporteGastos.UseVisualStyleBackColor = true;
+            this.btnReporteGastos.Click += new System.EventHandler(this.btnReporteGastos_Click);
             // 
             // PrincipalForm
             // 

@@ -49,7 +49,7 @@ namespace GestionDeGastos.Views
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            this.Close(); // Asume que PrincipalForm ya está abierto
+            this.Close(); 
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace GestionDeGastos.Views
                 var gastosFiltrados = listaGastos.Where(g =>
                     g.Fecha.Date >= desde &&
                     g.Fecha.Date <= hasta &&
-                    g.QuienPago == usuarioActual &&
+                    string.Equals(g.QuienPago, usuarioActual, StringComparison.OrdinalIgnoreCase) &&
                     ((rdbPersonal.Checked && string.IsNullOrEmpty(g.Grupo)) ||
                      (rdbGrupal.Checked && g.Grupo == grupoSeleccionado))
                 ).ToList();
@@ -91,12 +91,12 @@ namespace GestionDeGastos.Views
                     totalGastos += gasto.Monto;
                     var item = new ListViewItem(new[]
                     {
-                        gasto.Fecha.ToShortDateString(),
-                        gasto.Nombre,
-                        gasto.Monto.ToString("C"),
-                        gasto.Descripcion,
-                        gasto.Categoria ?? "Sin categoría"
-                    });
+                gasto.Fecha.ToShortDateString(),
+                gasto.Nombre,
+                gasto.Monto.ToString("C"),
+                gasto.Descripcion,
+                gasto.Categoria ?? "Sin categoría"
+            });
                     lstReporte.Items.Add(item);
                 }
 

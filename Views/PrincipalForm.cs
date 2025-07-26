@@ -75,5 +75,11 @@ namespace GestionDeGastos.Views
             SaldoForm saldoForm = new SaldoForm(nombreUsuario);  
             saldoForm.ShowDialog();
         }
+
+        private void btnReporteGastos_Click(object sender, EventArgs e)
+        {
+            ReporteGastosForm reporteForm = new ReporteGastosForm(nombreUsuario);
+            reporteForm.ShowDialog();
+        }
     }
 }

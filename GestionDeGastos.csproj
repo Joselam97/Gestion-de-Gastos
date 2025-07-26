@@ -99,6 +99,12 @@
       <DependentUpon>RegistroForm.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Views\ReporteGastosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReporteGastosForm.Designer.cs">
+      <DependentUpon>ReporteGastosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SaldoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     <Content Include="Data\usuarios.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Views\ReporteGastosForm.resx">
+      <DependentUpon>ReporteGastosForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\SaldoForm.resx">
       <DependentUpon>SaldoForm.cs</DependentUpon>
     </EmbeddedResource>
