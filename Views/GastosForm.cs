@@ -56,7 +56,7 @@ namespace GestionDeGastos.Views
             cmbCategoria.Items.AddRange(new string[]
             {
         "Servicios Basicos", "Carro", "Comida", "Ocio", "Alquiler",
-        "Deuda", "Estudios", "Salud", "Servicios Profesionales"
+        "Deuda", "Negocios", "Estudios", "Salud", "Servicios Profesionales"
             });
 
             cmbCategoria.SelectedIndex = 0; 

@@ -69,5 +69,11 @@ namespace GestionDeGastos.Views
             GestionarGruposForm gestionarGruposForm = new GestionarGruposForm();
             gestionarGruposForm.ShowDialog();
         }
+
+        private void btnSaldo_Click(object sender, EventArgs e)
+        {
+            SaldoForm saldoForm = new SaldoForm(nombreUsuario);  
+            saldoForm.ShowDialog();
+        }
     }
 }
