@@ -8,6 +8,7 @@ namespace GestionDeGastos.Models
 {
     public class Usuario
     {
+        //getters y setters para usuario
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Correo { get; set; }
@@ -16,6 +17,7 @@ namespace GestionDeGastos.Models
 
         public Usuario() { }
 
+        //constructor
         public Usuario(int id, string nombre, string correo, string contrasena)
         {
             Id = id;
@@ -24,6 +26,7 @@ namespace GestionDeGastos.Models
             Contrasena = contrasena;
         }
 
+        //metodo para validar que los espacios no esten vacios
         public bool DatosValidos()
         {
             return !string.IsNullOrWhiteSpace(Nombre) &&
@@ -31,6 +34,7 @@ namespace GestionDeGastos.Models
                    !string.IsNullOrWhiteSpace(Contrasena);
         }
 
+        //sobreescribe el metodo para que muestre el nombre como string
         public override string ToString()
         {
             return Nombre;

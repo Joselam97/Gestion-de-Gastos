@@ -1,128 +1,91 @@
-﻿namespace GestionDeGastos.Views
+﻿using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+using GestionDeGastos.Data;
+using GestionDeGastos.Models;
+using Newtonsoft.Json;
+
+
+namespace GestionDeGastos.Views
 {
-    partial class GrupoForm
+    public partial class GrupoForm : Form
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+        public GrupoForm()
         {
-            if (disposing && (components != null))
+            InitializeComponent();
+            CargarUsuarios();
+        }
+
+        private void CargarUsuarios()
+        {
+            var usuarios = UsuarioData.CargarUsuarios();
+
+            MessageBox.Show($"Usuarios cargados: {usuarios.Count}");
+
+            //agrega cada usuario al box
+            foreach (var usuario in usuarios)
             {
-                components.Dispose();
+                clbUsuarios.Items.Add(usuario);
             }
-            base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
+        private void btnGuardarGrupo_Click(object sender, EventArgs e)
         {
-            this.txtNombreGrupo = new System.Windows.Forms.TextBox();
-            this.clbUsuarios = new System.Windows.Forms.CheckedListBox();
-            this.btnGuardarGrupo = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            // 
-            // txtNombreGrupo
-            // 
-            this.txtNombreGrupo.Location = new System.Drawing.Point(56, 75);
-            this.txtNombreGrupo.Name = "txtNombreGrupo";
-            this.txtNombreGrupo.Size = new System.Drawing.Size(143, 20);
-            this.txtNombreGrupo.TabIndex = 0;
-            // 
-            // clbUsuarios
-            // 
-            this.clbUsuarios.FormattingEnabled = true;
-            this.clbUsuarios.Location = new System.Drawing.Point(65, 143);
-            this.clbUsuarios.Name = "clbUsuarios";
-            this.clbUsuarios.Size = new System.Drawing.Size(120, 94);
-            this.clbUsuarios.TabIndex = 1;
-            // 
-            // btnGuardarGrupo
-            // 
-            this.btnGuardarGrupo.Location = new System.Drawing.Point(72, 268);
-            this.btnGuardarGrupo.Name = "btnGuardarGrupo";
-            this.btnGuardarGrupo.Size = new System.Drawing.Size(100, 23);
-            this.btnGuardarGrupo.TabIndex = 0;
-            this.btnGuardarGrupo.Text = "Guardar";
-            this.btnGuardarGrupo.UseVisualStyleBackColor = true;
-            this.btnGuardarGrupo.Click += new System.EventHandler(this.btnGuardarGrupo_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Nombre de Grupo";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(81, 127);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Lista de Usuarios";
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.Location = new System.Drawing.Point(84, 362);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(75, 23);
-            this.btnVolver.TabIndex = 5;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = true;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
-            // GrupoForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 406);
-            this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnGuardarGrupo);
-            this.Controls.Add(this.clbUsuarios);
-            this.Controls.Add(this.txtNombreGrupo);
-            this.Name = "GrupoForm";
-            this.Text = "GrupoForm";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            //obtiene el nombre del grupo desde el textbox
+            string nombreGrupo = txtNombreGrupo.Text.Trim();
 
+            //si no se agrega nombre para el grupo
+            if (string.IsNullOrEmpty(nombreGrupo))
+            {
+                MessageBox.Show("Debe ingresar un nombre para el grupo.");
+                return;
+            }
+
+            //ruta donde se guardaran los grupos
+            string rutaArchivo = "grupos.json";
+            List<Grupo> grupos = new List<Grupo>();
+
+            //si ya existe el archivo lo carga para verificar duplicados
+            if (File.Exists(rutaArchivo))
+            {
+                string json = File.ReadAllText(rutaArchivo);
+                //deserealiza el archivo json
+                grupos = JsonConvert.DeserializeObject<List<Grupo>>(json) ?? new List<Grupo>();
+            }
+
+            //verifica que no exista ya un grupo con ese nombre. Ignorando Lower/Upper Case
+            if (grupos.Any(g => g.Nombre.Equals(nombreGrupo, StringComparison.OrdinalIgnoreCase)))
+            {
+                MessageBox.Show("Ya existe un grupo con ese nombre.");
+                return;
+            }
+
+            //crea un nuevo grupo con el nombre y los usuarios seleccionados
+            Grupo nuevoGrupo = new Grupo
+            {
+                Nombre = nombreGrupo,
+                Usuarios = new List<string>()
+            };
+
+            //agrega los usuarios seleccionados en el CheckedListBox al grupo
+            foreach (var item in clbUsuarios.CheckedItems)
+            {
+                nuevoGrupo.Usuarios.Add(item.ToString());
+            }
+
+            //agrega el nuevo grupo a la lista y lo guarda en el archivo json
+            grupos.Add(nuevoGrupo);
+            string jsonActualizado = JsonConvert.SerializeObject(grupos, Formatting.Indented);
+            File.WriteAllText(rutaArchivo, jsonActualizado);
+
+            MessageBox.Show("Grupo guardado exitosamente.");
+
+            //limpia el campo del nombre de grupo para seguir guardando otros grupos
+            txtNombreGrupo.Clear();
         }
 
-        #endregion
-
-        private System.Windows.Forms.TextBox txtNombreGrupo;
-        private System.Windows.Forms.CheckedListBox clbUsuarios;
-        private System.Windows.Forms.Button btnGuardarGrupo;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-
-        private void btnGuardarGrupo_Click_1(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void btnVolver_Click(object sender, System.EventArgs e)
-        {
-            this.Close();
-        }
+        private Button btnVolver;
     }
 }

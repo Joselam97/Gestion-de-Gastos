@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GestionDeGastos.Data;
 using GestionDeGastos.Models;
-using GestionDeGastos.Data;
-using GestionDeGastos.Models;
+
 
 namespace GestionDeGastos.Controllers
 {
@@ -43,10 +42,13 @@ namespace GestionDeGastos.Controllers
             return "Usuario registrado exitosamente";
         }
 
+        //valida si un usuario puede iniciar sesion segu su correo y contraseña
         public string ValidarInicioSesion(string correo, string contrasena)
         {
+            //carga lista de usuarios
             List<Usuario> usuarios = UsuarioData.CargarUsuarios();
 
+            //busca el usuario que haga match con la informacion
             var usuario = usuarios.FirstOrDefault(u =>
                 u.Correo.ToLower() == correo.ToLower() &&
                 u.Contrasena == contrasena);
