@@ -146,6 +146,8 @@
       <DependentUpon>SaldoForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Data\grupos.json" />
+    <None Include="DocumentosProyecto1\Entregable1_SistemaGastos_JoseAlvarez.pdf" />
+    <None Include="DocumentosProyecto1\ManualDeUsuario.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -165,6 +167,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="DocumentosProyecto1\README_GestionDeGastos.txt" />
+    <Content Include="DocumentosProyecto1\Repositorio.txt" />
     <Content Include="ImagenesUsuarios\avatar1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -177,6 +181,9 @@
     <Content Include="ImagenesUsuarios\avatar4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DocumentosProyecto2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
