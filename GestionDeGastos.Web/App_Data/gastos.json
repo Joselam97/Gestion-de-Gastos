@@ -1,0 +1,947 @@
+﻿[
+    {
+        "Nombre": "Vacaciones",
+        "Descripcion": "viaje a la playa",
+        "Monto": 50000.0,
+        "Fecha": "2025-07-24T21:43:43.6385026-06:00",
+        "QuienPago": "Jose",
+        "Grupo": null,
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "Abono a saldo",
+        "Descripcion": "parte del abono mensual",
+        "Monto": 100000.0,
+        "Fecha": "2025-07-24T21:59:02.379103-06:00",
+        "QuienPago": "Jose",
+        "Grupo": "Amigos",
+        "Categoria": "Deuda"
+    },
+    {
+        "Nombre": "Comida",
+        "Descripcion": "Comida para el mes",
+        "Monto": 50000.0,
+        "Fecha": "2025-07-25T20:24:02.5137256-06:00",
+        "QuienPago": "Jose",
+        "Grupo": "Familia",
+        "Categoria": "Comida"
+    },
+    {
+        "Nombre": "Repuestos",
+        "Descripcion": "llantas, carburador, arrancador",
+        "Monto": 250000.0,
+        "Fecha": "2025-07-25T20:24:30.8032166-06:00",
+        "QuienPago": "Jose",
+        "Grupo": null,
+        "Categoria": "Carro"
+    },
+    {
+        "Nombre": "Electricidad",
+        "Descripcion": "pago de servicio",
+        "Monto": 15000.0,
+        "Fecha": "2025-07-25T20:25:03.8313292-06:00",
+        "QuienPago": "Jose",
+        "Grupo": "Amigos",
+        "Categoria": "Servicios Basicos"
+    },
+    {
+        "Nombre": "gastos de casa",
+        "Descripcion": "servicios basicos",
+        "Monto": 22000.0,
+        "Fecha": "2025-07-25T20:25:33.3239625-06:00",
+        "QuienPago": "Jose",
+        "Grupo": null,
+        "Categoria": "Servicios Basicos"
+    },
+    {
+        "Nombre": "pintura de casa",
+        "Descripcion": "gastos de servicios de pintor",
+        "Monto": 45000.0,
+        "Fecha": "2025-07-25T20:25:53.4042614-06:00",
+        "QuienPago": "Jose",
+        "Grupo": "Familia",
+        "Categoria": "Servicios Profesionales"
+    },
+    {
+        "Nombre": "Universidad",
+        "Descripcion": "pago de cuatrimestre",
+        "Monto": 350000.0,
+        "Fecha": "2025-07-25T20:26:28.8519449-06:00",
+        "QuienPago": "Jose",
+        "Grupo": null,
+        "Categoria": "Estudios"
+    },
+    {
+        "Nombre": "carro",
+        "Descripcion": "carro comprado a mi amigo",
+        "Monto": 10000000.0,
+        "Fecha": "2025-06-04T20:26:47",
+        "QuienPago": "Jose",
+        "Grupo": "Amigos",
+        "Categoria": "Deuda"
+    },
+    {
+        "Nombre": "servicios de belleza",
+        "Descripcion": "regalo en salon de belleza",
+        "Monto": 55000.0,
+        "Fecha": "2025-06-12T20:27:35",
+        "QuienPago": "Jose",
+        "Grupo": "Familia",
+        "Categoria": "Servicios Profesionales"
+    },
+    {
+        "Nombre": "casa",
+        "Descripcion": "compra de casa de alquiler",
+        "Monto": 15000000.0,
+        "Fecha": "2025-07-25T20:39:12.0516748-06:00",
+        "QuienPago": "Carlos",
+        "Grupo": "Negocios",
+        "Categoria": "Deuda"
+    },
+    {
+        "Nombre": "salud de mi hijo",
+        "Descripcion": "seguro medico",
+        "Monto": 250000.0,
+        "Fecha": "2025-07-25T20:39:53.2582463-06:00",
+        "QuienPago": "Carlos",
+        "Grupo": null,
+        "Categoria": "Salud"
+    },
+    {
+        "Nombre": "costos",
+        "Descripcion": "costos fijos de negocio",
+        "Monto": 500000.0,
+        "Fecha": "2025-07-10T21:05:47",
+        "QuienPago": "Carlos",
+        "Grupo": null,
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "pago de agua",
+        "Descripcion": "cancelacion mensual del pago de agua",
+        "Monto": 17500.0,
+        "Fecha": "2025-07-25T21:25:35.532471-06:00",
+        "QuienPago": "Jose",
+        "Grupo": null,
+        "Categoria": "Servicios Basicos"
+    },
+    {
+        "Nombre": "telefono",
+        "Descripcion": "compra de telefono nuevo",
+        "Monto": 650000.0,
+        "Fecha": "2025-07-25T21:28:48.5247327-06:00",
+        "QuienPago": "Jose",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "Computadora",
+        "Descripcion": "partes de computadora",
+        "Monto": 85000.0,
+        "Fecha": "2025-07-28T15:22:01.1628556-06:00",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "bebidas",
+        "Descripcion": "compra de bebidas para fiesta",
+        "Monto": 5000.0,
+        "Fecha": "2025-07-28T15:22:57.7478218-06:00",
+        "QuienPago": "JoseA",
+        "Grupo": "grupo 3",
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "alquiler",
+        "Descripcion": "pago mensual de alquiler",
+        "Monto": 150000.0,
+        "Fecha": "2025-07-28T15:23:32.5772223-06:00",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "Cuatrimestre III",
+        "Descripcion": "pago del tercer cuatrimestre",
+        "Monto": 400000.0,
+        "Fecha": "2025-07-28T15:23:57.4654947-06:00",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Estudios"
+    },
+    {
+        "Nombre": "Streaming",
+        "Descripcion": "Pago mensual de servicios de streaming",
+        "Monto": 5000.0,
+        "Fecha": "2025-07-02T15:24:39",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "Ropa",
+        "Descripcion": "gastos en ropa nueva",
+        "Monto": 200000.0,
+        "Fecha": "2025-07-10T15:25:04",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "Repuestos",
+        "Descripcion": "compra de repuestos para reparacion de carro",
+        "Monto": 350000.0,
+        "Fecha": "2025-07-19T15:25:22",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Carro"
+    },
+    {
+        "Nombre": "Mano de obra",
+        "Descripcion": "Servicios de reparacion de auto",
+        "Monto": 200000.0,
+        "Fecha": "2025-07-08T15:26:37",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Servicios Profesionales"
+    },
+    {
+        "Nombre": "Tickets",
+        "Descripcion": "Compra de tiquetes de avion",
+        "Monto": 600000.0,
+        "Fecha": "2025-07-15T15:27:12",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "Gasolina",
+        "Descripcion": "gasto semanal de gasolina",
+        "Monto": 50000.0,
+        "Fecha": "2025-07-11T15:27:40",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Carro"
+    },
+    {
+        "Nombre": "servicio de construccion",
+        "Descripcion": "reparacion en la casa",
+        "Monto": 400000.0,
+        "Fecha": "2025-07-12T15:28:44",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Servicios Profesionales"
+    },
+    {
+        "Nombre": "telefono",
+        "Descripcion": "mensualidad del telefono",
+        "Monto": 20000.0,
+        "Fecha": "2025-07-26T15:29:40",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Servicios Basicos"
+    },
+    {
+        "Nombre": "vacaciones",
+        "Descripcion": "pago de hotel, mas gastos necesarios en ocio",
+        "Monto": 700000.0,
+        "Fecha": "2025-05-22T15:30:12",
+        "QuienPago": "JoseA",
+        "Grupo": null,
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "Dj",
+        "Descripcion": "Gastos en Dj para fiesta",
+        "Monto": 250000.0,
+        "Fecha": "2025-07-28T15:39:32.5162519-06:00",
+        "QuienPago": "JoseA",
+        "Grupo": "grupo 3",
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "Comida",
+        "Descripcion": "compra de comida para fiesta",
+        "Monto": 80000.0,
+        "Fecha": "2025-07-28T15:39:54.5866445-06:00",
+        "QuienPago": "JoseA",
+        "Grupo": "grupo 3",
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "casa",
+        "Descripcion": "construccion de casa",
+        "Monto": 15000000.0,
+        "Fecha": "2025-07-28T15:41:05.0242836-06:00",
+        "QuienPago": "JoseA",
+        "Grupo": "grupo2",
+        "Categoria": "Servicios Profesionales"
+    },
+    {
+        "Nombre": "escuela",
+        "Descripcion": "mensualidad",
+        "Monto": 50000.0,
+        "Fecha": "2025-07-28T16:10:28.4523988-06:00",
+        "QuienPago": "maria",
+        "Grupo": null,
+        "Categoria": "Estudios"
+    },
+    {
+        "Nombre": "ahorros",
+        "Descripcion": "ahorro semanal",
+        "Monto": 25000.0,
+        "Fecha": "2025-07-28T16:10:51.1680661-06:00",
+        "QuienPago": "maria",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "deuda",
+        "Descripcion": "pago de deuda",
+        "Monto": 45000.0,
+        "Fecha": "2025-07-28T16:11:21.9487102-06:00",
+        "QuienPago": "maria",
+        "Grupo": null,
+        "Categoria": "Deuda"
+    },
+    {
+        "Nombre": "mensualidad",
+        "Descripcion": "pago de mensualidad del gym",
+        "Monto": 12000.0,
+        "Fecha": "2025-07-28T16:12:23.9334736-06:00",
+        "QuienPago": "maria",
+        "Grupo": "gym",
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "medicamentos",
+        "Descripcion": "pago de medicamentos del tratamiento",
+        "Monto": 65000.0,
+        "Fecha": "2025-07-28T16:12:45.5804526-06:00",
+        "QuienPago": "maria",
+        "Grupo": "grupo8",
+        "Categoria": "Salud"
+    },
+    {
+        "Nombre": "banco",
+        "Descripcion": "cancelacion de intereses en el banco",
+        "Monto": 1000000.0,
+        "Fecha": "2025-07-28T16:13:07.1723055-06:00",
+        "QuienPago": "maria",
+        "Grupo": "grupo5",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "escuela",
+        "Descripcion": "pago de la escuela",
+        "Monto": 100000.0,
+        "Fecha": "2025-07-28T16:14:15.3324814-06:00",
+        "QuienPago": "maria",
+        "Grupo": "estudio",
+        "Categoria": "Estudios"
+    },
+    {
+        "Nombre": "vacaciones",
+        "Descripcion": "abono a las vacaciones de diciembre",
+        "Monto": 75000.0,
+        "Fecha": "2025-07-23T16:14:41",
+        "QuienPago": "maria",
+        "Grupo": "salida",
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "profesor",
+        "Descripcion": "clases para estudiar",
+        "Monto": 15000.0,
+        "Fecha": "2025-07-28T16:32:30.3143957-06:00",
+        "QuienPago": "ana",
+        "Grupo": null,
+        "Categoria": "Servicios Profesionales"
+    },
+    {
+        "Nombre": "nutricion",
+        "Descripcion": "consulta nutricional",
+        "Monto": 27000.0,
+        "Fecha": "2025-07-28T16:32:58.0680889-06:00",
+        "QuienPago": "ana",
+        "Grupo": null,
+        "Categoria": "Salud"
+    },
+    {
+        "Nombre": "gym",
+        "Descripcion": "mensualidad del gym",
+        "Monto": 22000.0,
+        "Fecha": "2025-07-28T16:33:29.9732001-06:00",
+        "QuienPago": "ana",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "abono",
+        "Descripcion": "abono al saldo",
+        "Monto": 50000.0,
+        "Fecha": "2025-07-28T16:33:48.5126664-06:00",
+        "QuienPago": "ana",
+        "Grupo": "deudas",
+        "Categoria": "Deuda"
+    },
+    {
+        "Nombre": "ropa",
+        "Descripcion": "ropa nueva",
+        "Monto": 40000.0,
+        "Fecha": "2025-07-28T16:34:15.960001-06:00",
+        "QuienPago": "ana",
+        "Grupo": "ana1",
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "muebles",
+        "Descripcion": "nuevos muebles para el hogar",
+        "Monto": 75000.0,
+        "Fecha": "2025-07-28T16:35:54.8522602-06:00",
+        "QuienPago": "ana",
+        "Grupo": "grupo8",
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "pastillas",
+        "Descripcion": "medicamentos",
+        "Monto": 10000.0,
+        "Fecha": "2025-07-28T16:38:40.9855926-06:00",
+        "QuienPago": "oscar",
+        "Grupo": null,
+        "Categoria": "Salud"
+    },
+    {
+        "Nombre": "lapiceros",
+        "Descripcion": "gastos para la universidad",
+        "Monto": 3500.0,
+        "Fecha": "2025-07-28T16:39:26.8014559-06:00",
+        "QuienPago": "oscar",
+        "Grupo": null,
+        "Categoria": "Estudios"
+    },
+    {
+        "Nombre": "hogar",
+        "Descripcion": "gastos necesarios",
+        "Monto": 65000.0,
+        "Fecha": "2025-06-05T16:39:43",
+        "QuienPago": "oscar",
+        "Grupo": null,
+        "Categoria": "Servicios Basicos"
+    },
+    {
+        "Nombre": "planilla",
+        "Descripcion": "pago a empleados",
+        "Monto": 6000000.0,
+        "Fecha": "2025-07-01T16:42:23",
+        "QuienPago": "oscar",
+        "Grupo": "finca",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "herramientas",
+        "Descripcion": "articulos para trabajo",
+        "Monto": 75000.0,
+        "Fecha": "2025-07-16T16:42:46",
+        "QuienPago": "oscar",
+        "Grupo": "finca",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "estilista",
+        "Descripcion": "tratamiento del cabello",
+        "Monto": 20000.0,
+        "Fecha": "2025-07-09T16:46:48",
+        "QuienPago": "pao",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "netflix",
+        "Descripcion": "servicios de streaming",
+        "Monto": 4000.0,
+        "Fecha": "2025-07-28T16:47:19.487176-06:00",
+        "QuienPago": "pao",
+        "Grupo": null,
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "celular",
+        "Descripcion": "plan de telefono",
+        "Monto": 15000.0,
+        "Fecha": "2025-07-09T16:47:53",
+        "QuienPago": "pao",
+        "Grupo": null,
+        "Categoria": "Servicios Basicos"
+    },
+    {
+        "Nombre": "platos",
+        "Descripcion": "compra de platos para el hogar",
+        "Monto": 14000.0,
+        "Fecha": "2025-06-19T16:48:11",
+        "QuienPago": "pao",
+        "Grupo": "casita",
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "pintura",
+        "Descripcion": "pintura para la casa",
+        "Monto": 35000.0,
+        "Fecha": "2025-07-28T16:48:42.5788187-06:00",
+        "QuienPago": "pao",
+        "Grupo": "casita",
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "ceramica",
+        "Descripcion": "ceramica faltante para la tienda",
+        "Monto": 70000.0,
+        "Fecha": "2025-06-13T16:49:10",
+        "QuienPago": "pao",
+        "Grupo": "tienda",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "mesas",
+        "Descripcion": "muebles necesarios",
+        "Monto": 40000.0,
+        "Fecha": "2025-07-28T16:49:35.5102323-06:00",
+        "QuienPago": "pao",
+        "Grupo": "local",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "compu",
+        "Descripcion": "computadora para el local",
+        "Monto": 300000.0,
+        "Fecha": "2025-07-28T16:58:00.3014668-06:00",
+        "QuienPago": "pao",
+        "Grupo": "local",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "documentos",
+        "Descripcion": "informacion de negocio",
+        "Monto": 4500.0,
+        "Fecha": "2025-07-02T17:04:09",
+        "QuienPago": "josue",
+        "Grupo": null,
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "familia",
+        "Descripcion": "ayuda al hogar",
+        "Monto": 70000.0,
+        "Fecha": "2025-07-28T17:04:32.0501802-06:00",
+        "QuienPago": "josue",
+        "Grupo": null,
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "agua",
+        "Descripcion": "pago de agua potable mensual",
+        "Monto": 18000.0,
+        "Fecha": "2025-07-11T17:04:51",
+        "QuienPago": "josue",
+        "Grupo": null,
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "electricidad",
+        "Descripcion": "gasto fijo",
+        "Monto": 14000.0,
+        "Fecha": "2025-07-28T17:05:15.7020465-06:00",
+        "QuienPago": "josue",
+        "Grupo": "grupo10",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "internet",
+        "Descripcion": "pago de internet",
+        "Monto": 23000.0,
+        "Fecha": "2025-07-28T17:24:50.1449494-06:00",
+        "QuienPago": "josue",
+        "Grupo": "grupo11",
+        "Categoria": "Servicios Basicos"
+    },
+    {
+        "Nombre": "intereses",
+        "Descripcion": "cancelacion de intereses mensuales",
+        "Monto": 405000.0,
+        "Fecha": "2025-07-09T17:25:21",
+        "QuienPago": "josue",
+        "Grupo": "grupo9",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "suplementos",
+        "Descripcion": "gimnasio",
+        "Monto": 35000.0,
+        "Fecha": "2025-07-28T17:36:17.1639676-06:00",
+        "QuienPago": "hilla",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "comida",
+        "Descripcion": "alimentos para la mascota",
+        "Monto": 10000.0,
+        "Fecha": "2025-07-11T17:37:57",
+        "QuienPago": "hilla",
+        "Grupo": null,
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "hojas",
+        "Descripcion": "hojas de papel",
+        "Monto": 2500.0,
+        "Fecha": "2025-07-28T17:38:32.8720945-06:00",
+        "QuienPago": "hilla",
+        "Grupo": "tienda",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "reparaciones",
+        "Descripcion": "servicios de reparacion para impresora",
+        "Monto": 30000.0,
+        "Fecha": "2025-07-10T17:38:51",
+        "QuienPago": "hilla",
+        "Grupo": "local",
+        "Categoria": "Servicios Profesionales"
+    },
+    {
+        "Nombre": "tela",
+        "Descripcion": "para reparaciones de ropa",
+        "Monto": 6000.0,
+        "Fecha": "2025-07-10T17:42:05",
+        "QuienPago": "mario",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "carne",
+        "Descripcion": "carnes para comida del hogar",
+        "Monto": 30000.0,
+        "Fecha": "2025-07-28T17:42:28.8162435-06:00",
+        "QuienPago": "mario",
+        "Grupo": null,
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "A/C",
+        "Descripcion": "aire acondicionado",
+        "Monto": 400000.0,
+        "Fecha": "2025-07-28T17:52:56.1861693-06:00",
+        "QuienPago": "mario",
+        "Grupo": "tienda",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "manteles",
+        "Descripcion": "manteles para las mesas",
+        "Monto": 30000.0,
+        "Fecha": "2025-07-28T17:53:34.9967271-06:00",
+        "QuienPago": "mario",
+        "Grupo": "restaurante",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "mesas",
+        "Descripcion": "mesas de madera para restaurante",
+        "Monto": 150000.0,
+        "Fecha": "2025-07-28T17:53:53.1172038-06:00",
+        "QuienPago": "mario",
+        "Grupo": "restaurante",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "ropa deportiva",
+        "Descripcion": "compra de ropa para gimnasio",
+        "Monto": 60000.0,
+        "Fecha": "2025-07-28T17:56:27.6122558-06:00",
+        "QuienPago": "brad",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "impresora",
+        "Descripcion": "partes para reparacion",
+        "Monto": 35000.0,
+        "Fecha": "2025-07-28T18:02:48.8608139-06:00",
+        "QuienPago": "brad",
+        "Grupo": "reparaciones",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "cables",
+        "Descripcion": "para instalar electricidad",
+        "Monto": 45000.0,
+        "Fecha": "2025-07-28T18:05:52.1299148-06:00",
+        "QuienPago": "brad",
+        "Grupo": "instalacions",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "balones",
+        "Descripcion": "balones para realizar deporte",
+        "Monto": 30000.0,
+        "Fecha": "2025-07-09T18:06:24",
+        "QuienPago": "brad",
+        "Grupo": "deportes",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "ventanas",
+        "Descripcion": "cristal para colocar en ventanas",
+        "Monto": 60000.0,
+        "Fecha": "2025-06-12T18:06:46",
+        "QuienPago": "brad",
+        "Grupo": "local",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "herramientas",
+        "Descripcion": "para realizar instalaciones",
+        "Monto": 70000.0,
+        "Fecha": "2025-07-28T18:07:27.8881377-06:00",
+        "QuienPago": "brad",
+        "Grupo": "instalacions",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "alquiler",
+        "Descripcion": "pago de mensualidad",
+        "Monto": 75000.0,
+        "Fecha": "2025-07-10T18:08:19",
+        "QuienPago": "brad",
+        "Grupo": "local",
+        "Categoria": "Alquiler"
+    },
+    {
+        "Nombre": "libros",
+        "Descripcion": "libros de matematicas",
+        "Monto": 12000.0,
+        "Fecha": "2025-06-06T18:08:53",
+        "QuienPago": "brad",
+        "Grupo": "grupo5",
+        "Categoria": "Estudios"
+    },
+    {
+        "Nombre": "plantas",
+        "Descripcion": "plantas para el hogar",
+        "Monto": 2500.0,
+        "Fecha": "2025-07-28T18:15:02.6654352-06:00",
+        "QuienPago": "kristel",
+        "Grupo": null,
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "audifonos",
+        "Descripcion": "para escuchar musica",
+        "Monto": 37500.0,
+        "Fecha": "2025-07-28T18:15:44.4961251-06:00",
+        "QuienPago": "kristel",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "bebidas",
+        "Descripcion": "bebidas de la fiesta",
+        "Monto": 70000.0,
+        "Fecha": "2025-07-28T18:16:12.9270028-06:00",
+        "QuienPago": "kristel",
+        "Grupo": "salida",
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "mesas de juego",
+        "Descripcion": "mesas para juegos",
+        "Monto": 60000.0,
+        "Fecha": "2025-07-09T18:16:49",
+        "QuienPago": "kristel",
+        "Grupo": "apuestas",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "ahorros",
+        "Descripcion": "ahorros necesarios para el hogar",
+        "Monto": 100000.0,
+        "Fecha": "2025-07-01T18:17:10",
+        "QuienPago": "kristel",
+        "Grupo": "casita",
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "adornos",
+        "Descripcion": "para el hogar",
+        "Monto": 10000.0,
+        "Fecha": "2025-07-28T18:17:51.2992109-06:00",
+        "QuienPago": "kristel",
+        "Grupo": null,
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "compu",
+        "Descripcion": "para el trabajo",
+        "Monto": 350000.0,
+        "Fecha": "2025-07-09T18:20:50",
+        "QuienPago": "ale",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "proteina",
+        "Descripcion": "para gimnasio",
+        "Monto": 40000.0,
+        "Fecha": "2025-07-28T18:21:11.6534022-06:00",
+        "QuienPago": "ale",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "regalos",
+        "Descripcion": "regalos para fiesta",
+        "Monto": 60000.0,
+        "Fecha": "2025-07-04T18:21:34",
+        "QuienPago": "ale",
+        "Grupo": null,
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "tijeras",
+        "Descripcion": "tijeras especiales",
+        "Monto": 5500.0,
+        "Fecha": "2025-07-28T18:22:13.6748967-06:00",
+        "QuienPago": "ale",
+        "Grupo": "instalaciones",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "cortes de carnes",
+        "Descripcion": "cortes de carne para restaurante",
+        "Monto": 150000.0,
+        "Fecha": "2025-07-28T18:22:33.6985071-06:00",
+        "QuienPago": "ale",
+        "Grupo": "restaurante",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "videojuego",
+        "Descripcion": "videojuegos para entretenimiento",
+        "Monto": 55000.0,
+        "Fecha": "2025-07-28T18:23:48.0271138-06:00",
+        "QuienPago": "mariana",
+        "Grupo": null,
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "viaje",
+        "Descripcion": "vacaciones a cancun",
+        "Monto": 850000.0,
+        "Fecha": "2025-06-19T18:24:19",
+        "QuienPago": "mariana",
+        "Grupo": null,
+        "Categoria": "Ocio"
+    },
+    {
+        "Nombre": "televisor",
+        "Descripcion": "tv para hogar",
+        "Monto": 400000.0,
+        "Fecha": "2025-07-28T18:25:55.2000281-06:00",
+        "QuienPago": "mariana",
+        "Grupo": null,
+        "Categoria": "Hogar"
+    },
+    {
+        "Nombre": "ingeniero",
+        "Descripcion": "ingeniero para medir el terreno",
+        "Monto": 250000.0,
+        "Fecha": "2025-07-28T18:26:14.0205859-06:00",
+        "QuienPago": "mariana",
+        "Grupo": "proyectos",
+        "Categoria": "Servicios Profesionales"
+    },
+    {
+        "Nombre": "comida",
+        "Descripcion": "comida para ayudar",
+        "Monto": 100000.0,
+        "Fecha": "2025-07-28T18:26:46.3910157-06:00",
+        "QuienPago": "mariana",
+        "Grupo": "ayuda",
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "tutorias",
+        "Descripcion": "pago a tutor",
+        "Monto": 15200.0,
+        "Fecha": "2025-07-28T18:27:16.3617202-06:00",
+        "QuienPago": "mariana",
+        "Grupo": "estudio",
+        "Categoria": "Estudios"
+    },
+    {
+        "Nombre": "monitor",
+        "Descripcion": "pantalla para computadora",
+        "Monto": 75500.0,
+        "Fecha": "2025-07-28T18:28:10.1231153-06:00",
+        "QuienPago": "andy",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "prestamo",
+        "Descripcion": "cancelacion total de prestamo",
+        "Monto": 12500000.0,
+        "Fecha": "2025-06-12T18:28:37",
+        "QuienPago": "andy",
+        "Grupo": null,
+        "Categoria": "Deuda"
+    },
+    {
+        "Nombre": "tenis",
+        "Descripcion": "par de tenis para salir",
+        "Monto": 75000.0,
+        "Fecha": "2025-07-28T23:39:01.250993-06:00",
+        "QuienPago": "Jose",
+        "Grupo": null,
+        "Categoria": "Personal"
+    },
+    {
+        "Nombre": "cortinas",
+        "Descripcion": "cortinas nuevas para el local",
+        "Monto": 3500.0,
+        "Fecha": "2025-07-28T23:39:23.2905043-06:00",
+        "QuienPago": "Jose",
+        "Grupo": "local",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "cuadernos",
+        "Descripcion": "para estudiar",
+        "Monto": 1500.0,
+        "Fecha": "2025-07-30T19:16:44.1683211-06:00",
+        "QuienPago": "Felipe",
+        "Grupo": "Negocios1",
+        "Categoria": "Estudios"
+    },
+    {
+        "Nombre": "comida",
+        "Descripcion": "carnes",
+        "Monto": 55000.0,
+        "Fecha": "2025-07-16T19:22:29",
+        "QuienPago": "Felipe",
+        "Grupo": "restaurante",
+        "Categoria": "Negocios"
+    },
+    {
+        "Nombre": "d",
+        "Descripcion": "d",
+        "Monto": 554.0,
+        "Fecha": "2025-08-10T17:34:23.8900225-06:00",
+        "QuienPago": "Jose",
+        "Grupo": "Familia",
+        "Categoria": "Servicios Basicos"
+    }
+]

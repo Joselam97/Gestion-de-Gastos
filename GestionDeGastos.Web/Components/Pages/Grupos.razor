@@ -1,0 +1,33 @@
+﻿@page "/grupos"
+@using GestionDeGastos.Web.Datos
+@using GestionDeGastos.Web.Modelos
+@inject GrupoRepositorioJson GruposRepo
+
+<h3>Grupos</h3>
+
+@if (grupos is null)
+{
+    <p>Cargando…</p>
+}
+else if (grupos.Count == 0)
+{
+    <p>No hay grupos.</p>
+}
+else
+{
+    <ul>
+        @foreach (var g in grupos)
+        {
+            <li>@g.Nombre</li>  
+        }
+    </ul>
+}
+
+@code {
+    private List<Grupo> grupos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        grupos = await GruposRepo.CargarAsync();
+    }
+}

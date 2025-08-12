@@ -1,0 +1,33 @@
+﻿@page "/"
+@using GestionDeGastos.Web.Datos
+@using GestionDeGastos.Web.Modelos
+@inject UsuarioRepositorioJson UsuarioRepo
+
+<h3>Principal</h3>
+
+@if (usuarios is null)
+{
+    <p>Cargando usuarios…</p>
+}
+else if (usuarios.Count == 0)
+{
+    <p>No hay usuarios.</p>
+}
+else
+{
+    <ul>
+        @foreach (var u in usuarios)
+        {
+            <li>@u.Nombre (@u.Correo)</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Usuario> usuarios;
+
+    protected override async Task OnInitializedAsync()
+    {
+        usuarios = await UsuarioRepo.CargarAsync();
+    }
+}

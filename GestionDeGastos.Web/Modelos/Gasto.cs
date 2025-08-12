@@ -9,6 +9,7 @@
         public DateTime Fecha { get; set; }
         public string QuienPago { get; set; }
         public string Grupo { get; set; }
+        public int Id { get; set; }
 
         public string Categoria { get; set; }
     }

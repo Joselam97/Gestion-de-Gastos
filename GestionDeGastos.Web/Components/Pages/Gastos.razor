@@ -1,0 +1,56 @@
+﻿@page "/gastos"
+@using GestionDeGastos.Web.Datos
+@using GestionDeGastos.Web.Modelos
+@inject GastoRepositorioJson GastosRepo
+
+<h3>Gastos</h3>
+
+@if (gastos is null)
+{
+    <p>Cargando…</p>
+}
+else if (gastos.Count == 0)
+{
+    <p>No hay gastos.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Monto</th>
+                <th>Fecha</th>
+                <th>QuienPagó</th>
+                <th>Grupo</th>
+                <th>Categoría</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var g in gastos)
+            {
+                <tr>
+                    <td>@g.Id</td>
+                    <td>@g.Nombre</td>
+                    <td>@g.Descripcion</td>
+                    <td>@g.Monto.ToString("N2")</td>
+                    <td>@g.Fecha</td> 
+                    <td>@g.QuienPago</td>
+                    <td>@(string.IsNullOrWhiteSpace(g.Grupo) ? "—" : g.Grupo)</td>
+                    <td>@g.Categoria</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Gasto> gastos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        gastos = await GastosRepo.CargarAsync();
+    }
+}

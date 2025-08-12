@@ -1,0 +1,525 @@
+﻿[
+    {
+        "Nombre": "Familia",
+        "Usuarios": [
+            "Jose",
+            "Yesenia"
+        ]
+    },
+    {
+        "Nombre": "Amigos",
+        "Usuarios": [
+            "Jose",
+            "Carlos"
+        ]
+    },
+    {
+        "Nombre": "Negocios1",
+        "Usuarios": [
+            "Yesenia",
+            "Carlos",
+            "Felipe"
+        ]
+    },
+    {
+        "Nombre": "grupo 3",
+        "Usuarios": [
+            "Jose",
+            "Carlos",
+            "JoseA"
+        ]
+    },
+    {
+        "Nombre": "grupo2",
+        "Usuarios": [
+            "Jose",
+            "Yesenia",
+            "Carlos",
+            "JoseA"
+        ]
+    },
+    {
+        "Nombre": "grupo5",
+        "Usuarios": [
+            "Jose",
+            "Yesenia",
+            "maria",
+            "ana",
+            "alvarez",
+            "brad",
+            "known"
+        ]
+    },
+    {
+        "Nombre": "estudio",
+        "Usuarios": [
+            "Jose",
+            "Yesenia",
+            "maria",
+            "ana",
+            "minor",
+            "smith",
+            "known",
+            "mariana",
+            "isaac",
+            "andy",
+            "nicole",
+            "sharon"
+        ]
+    },
+    {
+        "Nombre": "grupo8",
+        "Usuarios": [
+            "Jose",
+            "Yesenia",
+            "maria",
+            "ana",
+            "minor",
+            "smith",
+            "known",
+            "mariana",
+            "isaac",
+            "andy",
+            "nicole",
+            "malto",
+            "sha",
+            "sharon",
+            "magda",
+            "jackeline",
+            "carolina",
+            "paola"
+        ]
+    },
+    {
+        "Nombre": "gym",
+        "Usuarios": [
+            "Jose",
+            "Yesenia",
+            "JoseA",
+            "maria",
+            "ana",
+            "pao",
+            "josue",
+            "hilla",
+            "minor",
+            "smith",
+            "known",
+            "mariana",
+            "isaac",
+            "andy",
+            "nicole",
+            "malto",
+            "sha",
+            "sharon",
+            "magda",
+            "jackeline",
+            "carolina",
+            "paola",
+            "susan"
+        ]
+    },
+    {
+        "Nombre": "salida",
+        "Usuarios": [
+            "Jose",
+            "Yesenia",
+            "Carlos",
+            "maria",
+            "oscar",
+            "pao",
+            "josue",
+            "known",
+            "omar1",
+            "kristel",
+            "andre",
+            "mariana"
+        ]
+    },
+    {
+        "Nombre": "ana1",
+        "Usuarios": [
+            "Jose",
+            "Yesenia",
+            "Carlos",
+            "JoseA",
+            "maria",
+            "ana"
+        ]
+    },
+    {
+        "Nombre": "deudas",
+        "Usuarios": [
+            "JoseA",
+            "maria",
+            "ana",
+            "pao",
+            "mar",
+            "josue",
+            "juan",
+            "alvarez"
+        ]
+    },
+    {
+        "Nombre": "proyectos",
+        "Usuarios": [
+            "JoseA",
+            "maria",
+            "ana",
+            "pao",
+            "mar",
+            "josue",
+            "juan",
+            "alvarez",
+            "pamela",
+            "andrea",
+            "ashley",
+            "mariana",
+            "isaac"
+        ]
+    },
+    {
+        "Nombre": "grupo 4",
+        "Usuarios": [
+            "oscar",
+            "pao",
+            "mar",
+            "josue",
+            "karla",
+            "paola",
+            "eliamar",
+            "susan"
+        ]
+    },
+    {
+        "Nombre": "salidas",
+        "Usuarios": [
+            "oscar",
+            "pao",
+            "mar",
+            "josue",
+            "sharon",
+            "shannon",
+            "mafe",
+            "magda",
+            "paola",
+            "eliamar",
+            "susan"
+        ]
+    },
+    {
+        "Nombre": "finca",
+        "Usuarios": [
+            "oscar",
+            "pao",
+            "mar",
+            "josue",
+            "ashley",
+            "andre",
+            "mariana",
+            "kendra",
+            "jose23",
+            "sharon",
+            "shannon",
+            "mafe",
+            "magda",
+            "paola",
+            "eliamar",
+            "susan"
+        ]
+    },
+    {
+        "Nombre": "casita",
+        "Usuarios": [
+            "pao",
+            "mario",
+            "smith",
+            "kristel",
+            "mariana",
+            "jose23",
+            "kyle",
+            "magda",
+            "fio",
+            "carolina",
+            "eliamar"
+        ]
+    },
+    {
+        "Nombre": "tienda",
+        "Usuarios": [
+            "JoseA",
+            "ana",
+            "pao",
+            "hilla",
+            "mario",
+            "omar",
+            "minor",
+            "smith",
+            "known",
+            "kristel",
+            "pamela",
+            "ale",
+            "mariana",
+            "jose23",
+            "andy",
+            "kyle",
+            "shannon",
+            "magda",
+            "fio",
+            "carolina",
+            "eliamar"
+        ]
+    },
+    {
+        "Nombre": "local",
+        "Usuarios": [
+            "Jose",
+            "Yesenia",
+            "JoseA",
+            "ana",
+            "pao",
+            "josue",
+            "hilla",
+            "mario",
+            "omar",
+            "minor",
+            "brad",
+            "smith",
+            "known",
+            "kristel",
+            "pamela",
+            "andrea",
+            "ale",
+            "mariana",
+            "jose23",
+            "andy",
+            "kyle",
+            "shannon",
+            "magda",
+            "fio",
+            "carolina",
+            "paola",
+            "eliamar"
+        ]
+    },
+    {
+        "Nombre": "ayuda",
+        "Usuarios": [
+            "Jose",
+            "maria",
+            "ana",
+            "oscar",
+            "pao",
+            "omar",
+            "juan",
+            "alvarez",
+            "omar1",
+            "andrea",
+            "ashley",
+            "mariana"
+        ]
+    },
+    {
+        "Nombre": "grupo9",
+        "Usuarios": [
+            "josue",
+            "jose1",
+            "mario",
+            "omar",
+            "smith",
+            "known",
+            "omar1",
+            "pamela",
+            "andre",
+            "mariana",
+            "jose23",
+            "nicole",
+            "sha",
+            "sharon",
+            "mafe",
+            "magda",
+            "sonia",
+            "fio",
+            "carolina",
+            "eliamar"
+        ]
+    },
+    {
+        "Nombre": "grupo10",
+        "Usuarios": [
+            "JoseA",
+            "maria",
+            "ana",
+            "josue",
+            "juan",
+            "minor",
+            "omar1",
+            "kristel",
+            "pamela",
+            "ashley",
+            "andre",
+            "mariana",
+            "kendra",
+            "jose23",
+            "nicole",
+            "sha",
+            "sharon",
+            "mafe",
+            "magda",
+            "sonia",
+            "fio",
+            "carolina",
+            "eliamar"
+        ]
+    },
+    {
+        "Nombre": "grupo11",
+        "Usuarios": [
+            "JoseA",
+            "maria",
+            "ana",
+            "josue",
+            "juan",
+            "minor",
+            "known",
+            "omar1",
+            "isaac",
+            "nicole",
+            "kyle",
+            "sha",
+            "sharon",
+            "shannon",
+            "mafe",
+            "jackeline",
+            "laura",
+            "paola"
+        ]
+    },
+    {
+        "Nombre": "asuntos",
+        "Usuarios": [
+            "Jose",
+            "JoseA",
+            "maria",
+            "mario"
+        ]
+    },
+    {
+        "Nombre": "apuestas",
+        "Usuarios": [
+            "mario",
+            "alvarez",
+            "smith",
+            "kristel",
+            "mariana",
+            "jose23",
+            "kyle",
+            "sharon",
+            "magda",
+            "fio",
+            "eliamar"
+        ]
+    },
+    {
+        "Nombre": "servicios",
+        "Usuarios": [
+            "Yesenia",
+            "JoseA",
+            "ana",
+            "sugey",
+            "hilla",
+            "mario",
+            "smith",
+            "kristel",
+            "andrea",
+            "isaac",
+            "kendra",
+            "kyle",
+            "malto",
+            "sha",
+            "mafe",
+            "jackeline"
+        ]
+    },
+    {
+        "Nombre": "restaurante",
+        "Usuarios": [
+            "Carlos",
+            "maria",
+            "mar",
+            "mario",
+            "omar",
+            "minor",
+            "smith",
+            "known",
+            "kristel",
+            "pamela",
+            "andrea",
+            "ale",
+            "sharon",
+            "shannon",
+            "mafe",
+            "paola",
+            "eliamar",
+            "Felipe"
+        ]
+    },
+    {
+        "Nombre": "reparaciones",
+        "Usuarios": [
+            "minor",
+            "brad",
+            "smith",
+            "known",
+            "kyle"
+        ]
+    },
+    {
+        "Nombre": "instalaciones",
+        "Usuarios": [
+            "Yesenia",
+            "Carlos",
+            "brad",
+            "ale",
+            "kyle",
+            "sharon",
+            "shannon",
+            "carolina",
+            "eliamar",
+            "ana"
+        ]
+    },
+    {
+        "Nombre": "deportes",
+        "Usuarios": [
+            "JoseA",
+            "mar",
+            "hilla",
+            "omar",
+            "brad",
+            "smith",
+            "andrea",
+            "ashley",
+            "jose23",
+            "andy",
+            "nicole",
+            "malto",
+            "sha",
+            "fio",
+            "laura",
+            "karla",
+            "paola",
+            "susan"
+        ]
+    },
+    {
+        "Nombre": "ultimo1",
+        "Usuarios": [
+            "Yesenia",
+            "Carlos",
+            "maria",
+            "ana",
+            "pao",
+            "josue"
+        ]
+    }
+]

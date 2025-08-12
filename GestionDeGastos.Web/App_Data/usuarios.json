@@ -1,6 +1,359 @@
-﻿namespace GestionDeGastos.Web.App_Data
-{
-    public class usuarios
+﻿[
     {
+        "Id": 0,
+        "Nombre": "Jose",
+        "Correo": "jlam97@hotmail.es",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "Yesenia",
+        "Correo": "ymorales13@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "Carlos",
+        "Correo": "carlos@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar1.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "JoseA",
+        "Correo": "jose@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar1.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "maria",
+        "Correo": "maria@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "ana",
+        "Correo": "ana@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "oscar",
+        "Correo": "oscar@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "pao",
+        "Correo": "pao@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "mar",
+        "Correo": "mar@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "josue",
+        "Correo": "josue@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "sugey",
+        "Correo": "sugey@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "hilla",
+        "Correo": "hilla@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "jose1",
+        "Correo": "jose1@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "mario",
+        "Correo": "mario@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "omar",
+        "Correo": "omar@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar1.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "juan",
+        "Correo": "juan@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "alvarez",
+        "Correo": "alvarez@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar1.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "minor",
+        "Correo": "minor@icloud.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "brad",
+        "Correo": "brad@aol.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar1.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "smith",
+        "Correo": "smith@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar1.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "known",
+        "Correo": "known@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "omar1",
+        "Correo": "omar1@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar1.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "kristel",
+        "Correo": "kristel@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "pamela",
+        "Correo": "pame@icloud.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "andrea",
+        "Correo": "andrea@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "ashley",
+        "Correo": "ashley@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "ale",
+        "Correo": "ale@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "andre",
+        "Correo": "andre@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "mariana",
+        "Correo": "mariana@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "isaac",
+        "Correo": "isaac@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "kendra",
+        "Correo": "kendra1@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "jose23",
+        "Correo": "jose23@icloud.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "andy",
+        "Correo": "andy@hotmail.es",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "nicole",
+        "Correo": "nicole@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "kyle",
+        "Correo": "kyle@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "malto",
+        "Correo": "malto@aol.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar1.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "sha",
+        "Correo": "sha@icloud.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "sharon",
+        "Correo": "sharon@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "shannon",
+        "Correo": "shannon@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "mafe",
+        "Correo": "mafe@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "magda",
+        "Correo": "magda@aol.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "sonia",
+        "Correo": "sonia@yahoo.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "jackeline",
+        "Correo": "jacke@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "fio",
+        "Correo": "fio1@yahoo.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "laura",
+        "Correo": "laura@gmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "karla",
+        "Correo": "karla@yahoo.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "carolina",
+        "Correo": "caro@yahoo.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar2.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "paola",
+        "Correo": "paola@yahoo.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "eliamar",
+        "Correo": "eliamar@aol.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar4.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "susan",
+        "Correo": "susan@hotmail.com",
+        "Contrasena": "1234",
+        "RutaImagen": "ImagenesUsuarios/avatar3.png"
+    },
+    {
+        "Id": 0,
+        "Nombre": "Felipe",
+        "Correo": "111",
+        "Contrasena": "111",
+        "RutaImagen": "ImagenesUsuarios/avatar1.png"
     }
-}
+]
